@@ -1,6 +1,7 @@
-# Test files
+# Test data files
 test_*.sas
 test_*.xlsx
+# But keep test_analyzer.py
 
 # Python
 __pycache__/
