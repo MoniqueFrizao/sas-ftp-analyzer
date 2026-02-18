@@ -6,7 +6,7 @@ Analisa arquivos SAS para extrair conexões, tabelas e variáveis
 
 import re
 import os
-from typing import Dict, List, Tuple, Set
+from typing import Dict, List, Tuple, Set, Any
 from collections import defaultdict
 import pandas as pd
 
@@ -232,7 +232,7 @@ class ExtratorConexoes:
         
         return dict(grupos)
     
-    def mapear_tabelas_para_conexoes(self, codigo_sas: str) -> Dict[str, any]:
+    def mapear_tabelas_para_conexoes(self, codigo_sas: str) -> Dict[str, Any]:
         """
         Mapeia tabelas encontradas no código SAS para suas respectivas conexões.
         
